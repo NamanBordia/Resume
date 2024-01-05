@@ -1,0 +1,291 @@
+#myVideo {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 100%; 
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    
+ }
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 65px;
+    padding: 16px 48px ;
+    color: white;
+    background: none;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    
+}
+
+
+
+
+
+.navbar a{
+    color: white;
+    text-decoration: none;
+}
+.navbar_menu_container{
+    display: flex;
+    gap: 18px;
+    
+
+} 
+
+.photo {
+    height: 20%;
+    width: 20%;
+    margin-top: 70px; 
+    margin-left: 20px;
+    box-shadow:2px 2px #4e4d4d ;
+}
+.name{
+    color: white;
+    padding: 15px;
+    text-shadow: 1px 1px #4e4d4d;}
+
+#aboutme{
+    color: white;
+    border: solid 1px white;
+    margin: 20px;
+    padding: 20px;
+    
+
+}
+#headingaboutme{
+    margin-bottom: 5px;
+    padding: 10px;
+}
+    
+    
+
+#education{
+    color: white;
+    border: solid 1px white;
+    margin: 20px;
+    padding: 20px;
+}
+#heading_education{
+    margin-bottom: 5px;
+    padding: 10px;
+}
+#experience{
+    color: white;
+    border: solid 1px white;
+    margin: 20px;
+    padding: 20px;
+}
+#heading_experience{
+    margin-bottom: 5px;
+    padding: 10px;
+}
+.inner_list{
+    margin: 10px;
+    margin-left: 20px;
+    font-weight: 50;
+}
+.outer_list{
+    font-weight: bolder;
+}
+#hobbies{
+    color: white;
+    border: solid 1px white;
+    margin: 20px;
+    padding: 20px;
+}
+#heading_hobbies{
+    margin-bottom: 5px;
+    padding: 10px;
+}
+#skills{
+    color: white;
+    border: solid 1px white;
+    margin: 20px;
+    padding: 20px;
+}
+#heading_skills{
+    margin-bottom: 5px;
+    padding: 10px;
+}
+#project{
+    color: white;
+    border: solid 1px white;
+    margin: 20px;
+    padding: 20px;
+}
+#heading_project{
+    margin-bottom: 5px;
+    padding: 10px;
+}
+.link{
+    color: white;
+}
+
+
+/* footer */
+.container_footer{
+    color: white;
+}
+
+.footer{
+    width: 100%;
+}
+
+.footer_section1{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+    margin: auto;
+    color: white;
+}
+
+
+
+
+
+.section1__buttonContainer button{
+    padding: 5px;
+    width: 90px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    background-color: white;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+
+.navigation_container{
+    display: grid;
+    
+    grid-template-columns: repeat(3, 1fr);
+    width: 80%;
+    margin: auto;
+    gap: 1rem;
+    padding: 3rem 0;
+}
+
+.link__container{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    color: white;
+}
+
+.link__container h5{
+    font-weight: 500;
+    font-size: 15px;
+    margin-bottom: 5px;
+    letter-spacing: 0.8px;
+}
+
+
+
+
+
+
+
+.social__links_container button{
+    /* color: white; */
+    background-color: white;
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    cursor: pointer;
+    border: none;
+    text-decoration: none;
+}
+
+.social__links_container button i{
+    color: black;
+    font-size: 13px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.footer_list{
+    list-style-type: none;
+   
+}
+.footer_inner_list{
+    list-style-type: none;
+    margin-left: 20px;
+}
+.flink{
+    color: white;
+    text-decoration: none;
+}
+h3{
+    color: white;
+}
+.mobile-menu-icon {
+    display: none; 
+    cursor: pointer;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1001;
+    color: white;
+    font-size: 24px;
+
+}
+.input{
+    border: none;
+    outline: none;
+    text-decoration: none;
+    background: none;
+    color: black;
+    
+}
+
+/* Media query for screens less than 600px */
+@media screen and (max-width: 600px) {
+    .navbar_menu_container {
+        display: none;
+    }
+
+    .mobile-menu-icon {
+        display: block; 
+    }
+
+    .navbar_menu_container.show,
+    .mobile-menu-container {
+        display: flex;
+    }
+    .photo{
+    height: 30%;
+    width: 30%;
+    margin-top: 70px; 
+    margin-left: 20px;
+    }
+}
+@media screen and (min-width: 600px)
+{
+    .mobile-menu-icon {
+        display: none; 
+    }
+    .mobile-menu-container{
+        display: none;
+    }
+}
+
+
